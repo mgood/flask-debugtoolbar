@@ -37,13 +37,13 @@ class DebugPanel(object):
                 @classmethod
                 def init_app(cls, app):
                     app.add_url_rule(
-                        '/_flask_debugtoolbar_umldiagram/<path:filename>',
+                        '/_flask_debugtoolbar_umldiagram/<path:classname>',
                         '_flask_debugtoolbar_umldiagram.serve_generated_image',
                         cls.serve_generated_image
                     )
 
                 @classmethod
-                def serve_generated_image(cls, app):
+                def serve_generated_image(cls, classname):
                     return Response(...)
         """
         pass
