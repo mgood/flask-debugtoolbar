@@ -108,3 +108,14 @@ Profiler
 Reports profiling data for the current request. Due to the performance overhead, profiling is disabled by default. Click the checkmark to toggle profiling on or off. After enabling the profiler, refresh the page to re-run it with profiling.
 
 .. image:: _static/screenshot-profiler-panel.png
+
+
+Optional Panels
+===============
+
+Git
+---
+
+    flask_debugtoolbar.panels.git.GitDebugPanel
+
+Displays current git informations which are branch, commit hash and status.
